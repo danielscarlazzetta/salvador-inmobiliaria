@@ -4,7 +4,7 @@ import { Home, MapPin, Phone, Mail } from "lucide-react"
 export function Footer() {
   return (
     <footer className="bg-muted py-12 border-t">
-      <div className="container">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -15,9 +15,9 @@ export function Footer() {
               Ofrecemos las mejores propiedades con ubicaciones privilegiadas y precios competitivos.
             </p>
             <div className="flex gap-4 mt-4">
-              <SocialIcon href="#facebook" icon="facebook" />
-              <SocialIcon href="#instagram" icon="instagram" />
-              <SocialIcon href="#twitter" icon="twitter" />
+              <SocialIcon href="https://facebook.com" icon="facebook" />
+              <SocialIcon href="https://instagram.com" icon="instagram" />
+              <SocialIcon href="https://twitter.com" icon="twitter" />
             </div>
           </div>
 
@@ -36,11 +36,11 @@ export function Footer() {
           <FooterLinks
             title="Servicios"
             links={[
-              { href: "#compra", label: "Compra de propiedades" },
-              { href: "#venta", label: "Venta de propiedades" },
-              { href: "#asesoria", label: "Asesoría legal" },
-              { href: "#financiamiento", label: "Financiamiento" },
-              { href: "#avaluos", label: "Avalúos" },
+              { href: "/servicios/compra", label: "Compra de propiedades" },
+              { href: "/servicios/venta", label: "Venta de propiedades" },
+              { href: "/servicios/asesoria", label: "Asesoría legal" },
+              { href: "/servicios/financiamiento", label: "Financiamiento" },
+              { href: "/servicios/avaluos", label: "Avalúos" },
             ]}
           />
 

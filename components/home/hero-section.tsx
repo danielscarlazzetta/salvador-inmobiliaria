@@ -23,6 +23,9 @@ export function HeroSection() {
           <p className="text-lg md:text-xl text-white/90">
             Ofrecemos las mejores casas y terrenos con ubicaciones privilegiadas y precios competitivos.
           </p>
+          <Button size="lg" className="mt-4">
+            Explorar Propiedades
+          </Button>
         </div>
         <div className="mt-8 max-w-3xl bg-white p-4 rounded-lg shadow-lg">
           <div className="flex flex-col md:flex-row gap-4">

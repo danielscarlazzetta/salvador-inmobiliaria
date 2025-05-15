@@ -8,8 +8,10 @@ import { getPropertyById } from "@/data/properties"
 import { getImageWithFallback } from "@/lib/image-utils"
 import { notFound } from "next/navigation"
 
-export default function PropertyDetailPage({ params }: { params: { id: string } }) {
-  const property = getPropertyById(params.id)
+export default async function PropertyDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  // Esperar a que se resuelva la promesa de params
+  const { id } = await params
+  const property = getPropertyById(id)
 
   if (!property) {
     notFound()
@@ -188,4 +190,3 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
     </PageLayout>
   )
 }
-

@@ -33,7 +33,7 @@ export function WhyChooseUsSection() {
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-lg text-foreground">
-            <h3 className="text-xl font-bold mb-4">¿Interesado en alguna propiedad?</h3>
+            <h3 className="text-xl font-bold mb-4 text-primary">¿Interesado en alguna propiedad?</h3>
             <p className="text-muted-foreground mb-6">
               Déjanos tus datos y un asesor se pondrá en contacto contigo a la brevedad.
             </p>
